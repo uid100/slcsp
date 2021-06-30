@@ -21,6 +21,11 @@ Attached is _a_ solution for the SLCSP method.
 
 ## Assumptions
 
+- The Python interpreter does not need to be up-to-date, but does require Python3. My development environment is ver 3.9.0.
+- The rate_area and health_plan data modules support different file names and locations, but the main() program configuration expects a file named __'zips.csv'__ to be in the local directory.
+- The health_plan data module supports different file names and locations, but the main() program configuration expects the files named __'zips.csv'__ and __'plans.csv'__ to be in the local directory.
+- Data output is to stdout. Exception messages are written to stderr.
+- Using the command line switch __'-'__ will enable the program to accept data from stdin, but by default, the program will look for a __'slcsp.csv'__ file in the local directory.
 
 ---------------
 
@@ -33,13 +38,25 @@ chmod +x health_plan.py
     ./health_plan.py -s TX -a 5
 ```
 
----------------
 
 (optional:)
 ```
 chmod +x rate_area.py
     ./rate_area.py
-
+    ./rate_area.py -f ./test_zips.csv
+    ./rate_area.py -z 92040
 ```
 
----------------
+
+```
+chmod +x slcsp.py
+    ./slcsp.py
+    ./slcsp.py -h
+    ./slcsp.py --help
+    ./slcsp.py -f my_slcsp_data.csv
+    ./slcsp.py --file my_slcsp_data.csv
+    ./slcsp.py slcsp_test.csv
+    ./slcsp.py - < slcsp.csv > test.csv
+    cat slcsp_test.csv | ./slcsp.py
+```
+
