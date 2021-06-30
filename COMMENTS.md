@@ -30,6 +30,7 @@ Attached is _a_ solution for the SLCSP method.
 ---------------
 
 (optional:)
+
 (_includes minimal unit testing for the class module_)
 ``` 
 chmod +x health_plan.py
@@ -48,14 +49,15 @@ chmod +x rate_area.py
 ```
 
 
+(main entry point:)
 ```
 chmod +x slcsp.py
     ./slcsp.py
     ./slcsp.py -h
     ./slcsp.py --help
-    ./slcsp.py -f my_slcsp_data.csv
-    ./slcsp.py --file my_slcsp_data.csv
-    ./slcsp.py slcsp_test.csv
+    ./slcsp.py -f slcsp.csv
+    ./slcsp.py --file slcsp.csv
+    ./slcsp.py slcsp.csv
     ./slcsp.py - < slcsp.csv > test.csv
     cat slcsp_test.csv | ./slcsp.py
 ```
