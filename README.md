@@ -1,5 +1,7 @@
 # SLCSP
 
+![Usage](https://github.com/uid100/slcsp/blob/main/SLCSP_Usage.JPG?raw=true "Usage")
+
 ## Calculate the second lowest cost silver plan
 
 ## Problem
